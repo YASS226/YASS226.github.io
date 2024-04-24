@@ -34,7 +34,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: app-build
-          path: build
+          path: _site
   deploy:
     runs-on: ubuntu-latest
     needs: [build]
