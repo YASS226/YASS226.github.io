@@ -47,7 +47,7 @@ jobs:
         id-token: write
 
       environment:
-        name: github-ppages
+        name: github-pages
         url: ${{ steps.depployment.outputs.page_url }}
 
         runs-on: ubuntu-latest
