@@ -1,6 +1,5 @@
 import back from '../../src/back.png'
 import left from '../../src/left.png'
-import Nav from './Nav';
 
 const Dashboard = () => {
     return (
