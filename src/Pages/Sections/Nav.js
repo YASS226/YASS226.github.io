@@ -5,8 +5,6 @@ import del from '../../src/delete.png';
 const Nav = () => {
 
     const [isActive, setActive] = useState(false);
-    const [selectedlang] = useState('eng');
-
 
     const handleClickOnNav = () => {
         setActive(!isActive);
