@@ -39,7 +39,7 @@ const Nav = () => {
                     <a href="/#Info" className="font-popins text-[15px] text-[#000] border-b w-[80%] text-center pl-2 block mt-4" onClick={handleClickOnNav}>About us</a>
                     <a id='NavContact' href="/#Services" className="font-popins text-[15px] text-[#000] border-b w-[80%] text-center pl-2 block mt-4" onClick={handleClickOnNav}>Services</a>
                     <a id='Navteritory' href="/#Contact" className="font-popins text-[15px] text-[#000] w-[80%] border-b text-center pl-2 block mt-4" onClick={handleClickOnNav}>Contact us</a>
-                    <a href="/#Reviews" className="font-popins text-[15px] text-[#000] w-[80%] text-center pl-2 block mt-4" onClick={handleClickOnNav}>Reviews</a>
+                    <a href="/#Reviews" className="font-popins text-[15px] text-[#000] w-[80%] text-center pl-2 block mt-4" onClick={handleClickOnNav}>Reviewss</a>
                    
                 </div>
             </div>
