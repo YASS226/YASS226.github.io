@@ -6,3 +6,8 @@
     font-family: 'Lostar';
     src: url('../public/Fonts/Lostar.ttf');
   }
+
+  @font-face {
+    font-family: 'poppins';
+    src: url('../public/Fonts/Poppins.ttf');
+  }  
