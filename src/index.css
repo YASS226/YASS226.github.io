@@ -11,3 +11,9 @@
     font-family: 'poppins';
     src: url('../public/Fonts/Poppins.ttf');
   }  
+
+  @font-face {
+    font-family: 'poppins';
+    font-weight: 400;
+    src: url('../public/Fonts/Poppins-Bold.ttf');
+  }  
