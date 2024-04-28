@@ -9,33 +9,33 @@ const Services = () => {
             <p className=" font-poppins text-[30px] text-start font-bold text-gray-400 " >Services</p>
             <div className=" mt-3 mb-14 w-full flex flex-col ">
                 <div className=" w-full flex h-fit  justify-between ">
-                    <div className="w-[500px] h-fit   shadow-md  ">
-                        <div className="h-[300px] flex flex-col items-start p-5 ">
-                            <img className=" w-[87.67px] h-[87.67px] opacity-75 mb-3 " src={del} alt="" />
-                            <p className='font-poppins text-[35px] font-semibold mb-3 ' >Brand Strategy</p>
-                            <p className='font-poppins text-[12px] mb-10 ' >Crafting the Heartbeat of Your Deer Brand</p>
-                            <p className='font-poppins text-[12px] text-right opacity-25  ' >En savoir plus </p>
+                    <div className="xl:w-[500px] w-[48%]  h-fit   shadow-md  ">
+                        <div className="xl:h-[300px] h-[150px] flex flex-col items-start p-5 ">
+                            <img className=" xl:w-[87.67px] xl:h-[87.67px] w-[35px] h-[35px] opacity-75 mb-3 " src={del} alt="" />
+                            <p className='font-poppins xl:text-[35px] text-[9px] font-semibold mb-3 text-start ' >Brand Strategy</p>
+                            <p className='font-poppins xl:xl:text-[12px] xl:mb-10 text-[6px] text-start mb-[0rem] ' >Crafting the Heartbeat of Your Deer Brand</p>
+                            <p className='font-poppins xl:xl:text-[12px] text-[5px] text-right opacity-25  ' >En savoir plus </p>
                         </div>
                     </div>
-                    <div className="w-[500px] h-[300px]    shadow-md flex flex-col items-start p-5 ">
-                        <img className=" w-[87.67px] h-[87.67px] opacity-75 mb-3 " src={design} alt="" />
-                        <p className='font-poppins text-[35px] font-semibold mb-3 ' >Design</p>
-                        <p className='font-poppins text-[12px] mb-10 ' >Capturing the Essence of the Deer Spirit</p>
-                        <p className='font-poppins text-[12px] text-right opacity-25  ' >En savoir plus </p>
+                    <div className="xl:w-[500px] xl:h-[300px] w-[48%] h-[150px]    shadow-md flex flex-col items-start p-5 ">
+                        <img className=" xl:w-[87.67px] xl:h-[87.67px] w-[35px] h-[35px] opacity-75 mb-3 " src={design} alt="" />
+                        <p className='font-poppins xl:text-[35px] text-[9px] font-semibold mb-3 text-start ' >Design</p>
+                        <p className='font-poppins xl:text-[12px] xl:mb-10 text-[6px] text-start mb-[0rem] ' >Capturing the Essence of the Deer Spirit</p>
+                        <p className='font-poppins xl:text-[12px] text-[5px] text-right opacity-25  ' >En savoir plus </p>
                     </div>
                 </div>
                 <div className=" w-full flex h-fit  justify-between mt-7 ">
-                    <div className="w-[500px] h-[300px]    shadow-md flex flex-col items-start p-5 ">
-                        <img className=" w-[87.67px] h-[87.67px] opacity-75 mb-3 " src={mark} alt="" />
-                        <p className='font-poppins text-[35px] font-semibold mb-3 ' >Marketing</p>
-                        <p className='font-poppins text-[12px] mb-10 ' >Amplifying the Deer's Call Across Digital Landscapes</p>
-                        <p className='font-poppins text-[12px] text-right opacity-25  ' >En savoir plus </p>
+                    <div className="xl:w-[500px] xl:h-[300px] w-[48%] h-[150px]    shadow-md flex flex-col items-start p-5 ">
+                        <img className=" xl:w-[87.67px] xl:h-[87.67px] w-[35px] h-[35px] opacity-75 mb-3 " src={mark} alt="" />
+                        <p className='font-poppins xl:text-[35px] text-[9px] font-semibold mb-3 text-start ' >Marketing</p>
+                        <p className='font-poppins xl:text-[12px] xl:mb-10 text-[6px] text-start mb-[0rem] ' >Amplifying the Deer's Call Across Digital Landscapes</p>
+                        <p className='font-poppins xl:text-[12px] text-[5px] text-right opacity-25  ' >En savoir plus </p>
                     </div>
-                    <div className="w-[500px] h-[300px]    shadow-md flex flex-col items-start p-5 ">
-                        <img className=" w-[87.67px] h-[87.67px] opacity-75 mb-3 " src={sett} alt="" />
-                        <p className='font-poppins text-[35px] font-semibold mb-3 ' >Brand Strategy</p>
-                        <p className='font-poppins text-[12px] mb-10 ' >Bringing the Deer's Vision to Life</p>
-                        <p className='font-poppins text-[12px] text-right opacity-25  ' >En savoir plus </p>
+                    <div className="xl:w-[500px] xl:h-[300px] w-[48%] h-[150px]    shadow-md flex flex-col items-start p-5 ">
+                        <img className=" xl:w-[87.67px] xl:h-[87.67px] w-[35px] h-[35px] opacity-75 mb-3 " src={sett} alt="" />
+                        <p className='font-poppins xl:text-[35px] text-[9px] font-semibold mb-3 text-start ' >Brand Strategy</p>
+                        <p className='font-poppins xl:text-[12px] xl:mb-10 text-[6px] text-start mb-[0rem] ' >Bringing the Deer's Vision to Life</p>
+                        <p className='font-poppins xl:text-[12px] text-[5px] text-right opacity-25  ' >En savoir plus </p>
                     </div>
                 </div>
             </div>
