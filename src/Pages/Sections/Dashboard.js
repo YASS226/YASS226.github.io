@@ -10,7 +10,7 @@ const Dashboard = () => {
         <div className="">
             <Nav />
             <div className="h-[100vh] w-full flex flex-col justify-center text-center bg-cover bg-[#A51D21] overflow-hidden " style={{ backgroundImage: `url(${back})`, backgroundPosition: 'center center' }}>
-                <div className=" bg-[#003748] absolute w-full h-full opacity-30 z-10 "></div>
+                <div className=" bg-[#003748] absolute w-full h-[100vh] opacity-30 z-10 "></div>
                 <img
                     src={deer}
                     className='xl:w-[20rem] w-[15rem] m-auto absolute left-1/2 top-[38%] xl:top-[42%]  transform -translate-x-1/2 -translate-y-1/2 z-20'
