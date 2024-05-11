@@ -66,19 +66,19 @@ const ServicesInfooTwo = () => {
                         <img className=" xl:w-[37.67px] xl:h-[37.67px] w-[10px] h-[10px] opacity-75 xl:mb-3 mb-[7px] " src={del} alt="" />
                         <p className='font-poppins xl:text-[19px] text-[6px] font-semibold xl:mb-3 text-start mb-1 ' >CONSULTING</p>
                         <p className='font-poppins xl:text-[8px] xl:mb-10 text-[4px] text-start mb-[0rem]  ' >Partner with us for expert consulting and success.</p>
-                        <p className='font-poppins xl:text-[8px] text-[5px] text-right opacity-25 mt-1 ' onClick={() => { handelclickonsavoirplu(1) }} >En savoir plus </p>
+                        <p className='font-poppins xl:text-[8px] text-[5px] text-right opacity-25 mt-1 cursor-pointer ' onClick={() => { handelclickonsavoirplu(1) }} >En savoir plus </p>
                     </div>
                     <div className="xl:w-[270px] xl:h-[200px] w-[30%] h-[80px] shadow-md flex flex-col items-start xl:p-5 p-3 z-20">
                         <img className=" xl:w-[37.67px] xl:h-[37.67px] w-[10px] h-[10px] opacity-75 xl:mb-3 mb-[7px] " src={mark} alt="" />
                         <p className='font-poppins xl:text-[19px] text-[6px] font-semibold xl:mb-3 text-start mb-1 ' >WEB MARKETING</p>
                         <p className='font-poppins xl:text-[8px] xl:mb-10 text-[4px] text-start mb-[0rem] ' >Amplifying the Deer's Call Across Digital Landscapes</p>
-                        <p className='font-poppins xl:text-[8px] text-[5px] text-right opacity-25 mt-1  ' onClick={() => { handelclickonsavoirplu(3) }} >En savoir plus </p>
+                        <p className='font-poppins xl:text-[8px] text-[5px] text-right opacity-25 mt-1 cursor-pointer ' onClick={() => { handelclickonsavoirplu(3) }} >En savoir plus </p>
                     </div>
                     <div className="xl:w-[270px] xl:h-[200px] w-[30%] h-[80px] shadow-md flex flex-col items-start xl:p-5 p-3 z-20">
                         <img className=" xl:w-[37.67px] xl:h-[37.67px] w-[10px] h-[10px] opacity-75 xl:mb-3 mb-[7px] " src={sett} alt="" />
                         <p className='font-poppins xl:text-[19px] text-[6px] font-semibold xl:mb-3 text-start mb-1 ' >EVENT CREATORS</p>
                         <p className='font-poppins xl:text-[8px] xl:mb-10 text-[4px] text-start mb-[0rem] ' >We craft brand-building events</p>
-                        <p className='font-poppins xl:text-[8px] text-[5px] text-right opacity-25 mt-1  ' onClick={() => { handelclickonsavoirplu(4) }} >En savoir plus </p>
+                        <p className='font-poppins xl:text-[8px] text-[5px] text-right opacity-25 mt-1 cursor-pointer ' onClick={() => { handelclickonsavoirplu(4) }} >En savoir plus </p>
                     </div>
                 </div>
                 <Footer />

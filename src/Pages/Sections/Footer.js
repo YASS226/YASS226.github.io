@@ -13,7 +13,7 @@ const Footer = () => {
             </div> */}
             <ul class="wrapper">
                 <li class="icon facebook">
-                    <span class="tooltip">Facebook</span>
+                    <span class="tooltip">agencyayl</span>
                     <svg
                         viewBox="0 0 320 512"
                         height="1.2em"
@@ -26,7 +26,7 @@ const Footer = () => {
                     </svg>
                 </li>
                 <li class="icon twitter">
-                    <span class="tooltip">Twitter</span>
+                    <span class="tooltip">agencyayl</span>
                     <svg
                         height="1.8em"
                         fill="currentColor"
@@ -40,7 +40,7 @@ const Footer = () => {
                     </svg>
                 </li>
                 <li class="icon instagram">
-                    <span class="tooltip">Instagram</span>
+                    <span class="tooltip">agencyayl</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1.2em"
