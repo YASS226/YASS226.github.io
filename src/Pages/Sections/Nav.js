@@ -15,14 +15,14 @@ const Nav = () => {
 
     return (
         <div className="">
-            <div className="w-full h-[50px] bg-white shadow-md flex justify-between px-2  z-30  xl:h-[70px]">
+            <div className="w-full h-[50px] bg-white nbr flex justify-between px-2  z-30  xl:h-[70px]  ">
                 <a href="/" style={{ textDecoration: 'none' }} className=' items-center h-full '  >
-                    <p className='font-Lostar xl:text-[33px] text-[22px] text-[#A51D21] items-center justify-center m-auto pt-3' >Ayl agency</p>
+                    <p className='font-Lostar xl:text-[33px] text-[22px] text-[#003748] items-center justify-center m-auto pt-3' >Ayl agency</p>
                 </a>
                 <div className={'flex justify-center flex-col w-[17px] burger xl:hidden'} onClick={handleClickOnNav}>
-                    <div className="w-[10px] h-1 bg-[#A51D21] rounded-xl"></div>
-                    <div className="w-[17px] h-1 bg-[#A51D21] rounded-xl mt-[3px] mb-[3px]"></div>
-                    <div className="w-[10px] ml-auto mr-0 h-1 bg-[#A51D21] rounded-xl"></div>
+                    <div className="w-[10px] h-1 bg-[#003748] rounded-xl"></div>
+                    <div className="w-[17px] h-1 bg-[#0b232a] rounded-xl mt-[3px] mb-[3px]"></div>
+                    <div className="w-[10px] ml-auto mr-0 h-1 bg-[#003748] rounded-xl"></div>
                 </div>
                 <div className=" hidden xl:flex xl:items-center xl:justify-center xl:mr-6 ">
                     <a id='NavContact' href="/#Info" className=' font-Jaldi mx-2 text-[#000] ' >About us</a>
@@ -38,7 +38,7 @@ const Nav = () => {
                     <a id='NavContact' href="/#Services" className="font-popins text-[15px] text-[#000] border-b w-[80%] text-center pl-2 block mt-4" onClick={handleClickOnNav}>Services</a>
                     <a id='Navteritory' href="/#Contact" className="font-popins text-[15px] text-[#000] w-[80%] border-b text-center pl-2 block mt-4" onClick={handleClickOnNav}>Contact us</a>
                     <a href="/#Reviews" className="font-popins text-[15px] text-[#000] w-[80%] text-center pl-2 block mt-4" onClick={handleClickOnNav}>Reviewss</a>
-                   
+
                 </div>
             </div>
 
