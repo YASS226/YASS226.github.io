@@ -1,7 +1,6 @@
 import Nav from "./Nav";
 import del from '../../src/brand.png';
 import des from '../../src/people.png';
-import bg from '../../src/bgg.svg';
 
 import design from '../../src/design.png';
 import mark from '../../src/marketing.png';

@@ -1,7 +1,6 @@
 import Nav from "./Nav";
 import del from '../../src/brand.png';
 import des from '../../src/discussion.png';
-import bg from '../../src/bgg.svg';
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -15,19 +14,19 @@ import ServicesInfofour from "./ServicesInfofour";
 
 const handelclickonsavoirplu = (n) => {
     const root = ReactDOM.createRoot(document.getElementById('root'));
-    if (n == 2) {
+    if (n === 2) {
         root.render(
             <React.StrictMode>
                 <ServicesInfooTwo />
             </React.StrictMode>
         );
-    } else if (n == 3) {
+    } else if (n === 3) {
         root.render(
             <React.StrictMode>
                 <ServicesInfooThree />
             </React.StrictMode>
         );
-    } else if (n == 4) {
+    } else if (n === 4) {
         root.render(
             <React.StrictMode>
                 <ServicesInfofour />

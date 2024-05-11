@@ -12,25 +12,25 @@ import ServicesInfofour from './ServicesInfofour';
 
 const handelclickonsavoirplu = (n) => {
     const root = ReactDOM.createRoot(document.getElementById('root'));
-    if (n == 1) {
+    if (n === 1) {
         root.render(
             <React.StrictMode>
                 <ServicesInfoo />
             </React.StrictMode>
         );
-    } else if (n == 2) {
+    } else if (n === 2) {
         root.render(
             <React.StrictMode>
                 <ServicesInfooTwo />
             </React.StrictMode>
         );
-    } else if (n == 3) {
+    } else if (n === 3) {
         root.render(
             <React.StrictMode>
                 <ServicesInfooThree />
             </React.StrictMode>
         );
-    } else if (n == 4) {
+    } else if (n === 4) {
         root.render(
             <React.StrictMode>
                 <ServicesInfofour />

@@ -1,7 +1,4 @@
 import ayl from '../../src/ayl.png';
-import insta from '../../src/insta.png';
-import face from '../../src/face.svg';
-import twiter from '../../src/twiter.svg';
 
 const Footer = () => {
     return (

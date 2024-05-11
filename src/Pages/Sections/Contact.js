@@ -2,7 +2,6 @@ const Contact = () => {
    
     return (
         <div id="Contact" className="w-full bg-[#003748] mt-4 " style={{
-            background: 'rgb(0,55,72)',
             background: 'linear-gradient(144deg, rgba(0,55,72,1) 0%, rgba(0,112,147,1) 37%, rgba(0,86,112,1) 100%)',
         }} >
             
