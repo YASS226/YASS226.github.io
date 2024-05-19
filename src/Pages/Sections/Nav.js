@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import del from '../../src/delete.png';
-import logo from '../../src/logo.png';
+import logo from '../../src/ayl.jpg';
 
 
 const Nav = () => {
@@ -18,7 +18,7 @@ const Nav = () => {
         <div className="">
             <div className="w-full h-[50px] bg-white box fixed flex justify-between px-2  z-30  xl:h-[70px]  ">
                 <div className=" flex  ">
-                <img className='w-[21%]' src={logo} alt="" />
+                <img className=' w-[50px] xl:w-[63px]' src={logo} alt="" />
                 <a href="/" style={{ textDecoration: 'none' }} className=' items-center h-full '  >
                     <p className='font-Lostar xl:text-[33px] text-[22px] text-[#003748] items-center justify-center m-auto pt-3' >Ayl agency</p>
                 </a>
