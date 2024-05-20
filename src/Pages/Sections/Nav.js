@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import del from '../../src/delete.png';
-import logo from '../../src/ayl.jpg';
+import logo from '../../src/ayl2.png';
 
 
 const Nav = () => {
@@ -18,10 +18,12 @@ const Nav = () => {
         <div className="">
             <div className="w-full h-[50px] bg-white box fixed flex justify-between px-2  z-30  xl:h-[70px]  ">
                 <div className=" flex  ">
-                <img className=' w-[50px] xl:w-[63px]' src={logo} alt="" />
-                <a href="/" style={{ textDecoration: 'none' }} className=' items-center h-full '  >
-                    <p className='font-Lostar xl:text-[33px] text-[22px] text-[#003748] items-center justify-center m-auto pt-3' >Ayl agency</p>
-                </a>
+                    {/*     height: 57px;
+    margin-right: 10px; */}
+                    <img className=' w-[30px] h-[40px] xl:w-[41px] xl:h-[57px] mr-[10px]  mt-[2px] xl:mt-0 ' src={logo} alt="" />
+                    <a href="/" style={{ textDecoration: 'none' }} className=' items-center h-full '  >
+                        <p className='font-Lostar xl:text-[33px] text-[22px] text-[#003748] items-center justify-center m-auto pt-3' >Ayl agency</p>
+                    </a>
                 </div>
                 <div className={'flex justify-center flex-col w-[17px] burger xl:hidden'} onClick={handleClickOnNav}>
                     <div className="w-[10px] h-1 bg-[#003748] rounded-xl"></div>
