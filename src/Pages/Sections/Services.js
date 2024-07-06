@@ -1,78 +1,51 @@
-import del from '../../src/brand.png';
+import del from '../../src/brandd.png';
 import design from '../../src/design.png';
 import mark from '../../src/marketing.png';
-import sett from '../../src/setting.png';
+import sett from '../../src/settingd.png';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import ServicesInfoo from './ServicesInfoo';
-import ServicesInfooTwo from './ServicesInfooTwo';
-import ServicesInfooThree from './ServicesInfooThree';
-import ServicesInfofour from './ServicesInfofour';
+import back from '../../src/dark-pattern-bgs.jpg';
 
-
-const handelclickonsavoirplu = (n) => {
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    if (n === 1) {
-        root.render(
-            <React.StrictMode>
-                <ServicesInfoo />
-            </React.StrictMode>
-        );
-    } else if (n === 2) {
-        root.render(
-            <React.StrictMode>
-                <ServicesInfooTwo />
-            </React.StrictMode>
-        );
-    } else if (n === 3) {
-        root.render(
-            <React.StrictMode>
-                <ServicesInfooThree />
-            </React.StrictMode>
-        );
-    } else if (n === 4) {
-        root.render(
-            <React.StrictMode>
-                <ServicesInfofour />
-            </React.StrictMode>
-        );
-    }
-}
 
 const Services = () => {
     return (
-        <div id='Services' className=" w-[73%] m-auto mt-[10] xl:mt-[4rem] mb-5 ">
-            <p className=" font-poppins text-[30px] text-start font-bold text-[#003748] " >Services</p>
-            <div className=" mt-3 mb-14 w-full flex flex-col ">
-                <div className=" w-full flex h-fit  justify-between ">
-                    <div className="xl:w-[500px] w-[48%]  h-fit box cursor-pointer " onClick={() => { handelclickonsavoirplu(1) }}  >
-                        <div className="xl:h-[300px] h-[150px] flex flex-col items-start p-5 ">
-                            <img className=" xl:w-[87.67px] xl:h-[87.67px] w-[35px] h-[35px] opacity-75 mb-3 " src={del} alt="" />
-                            <p className='font-poppins xl:text-[35px] text-[9px] font-semibold mb-3 text-start ' >CONSULTING</p>
-                            <p className='font-poppins xl:xl:text-[12px] xl:mb-10 text-[6px] text-start mb-[0rem] ' >Partner with us for expert consulting and success.</p>
-                            <p className='font-poppins xl:xl:text-[12px] text-[5px] text-right opacity-25  '  >En savoir plus </p>
-                        </div>
+        <div className=" w-full h-[320px] overflow-hidden bg-black relative mt-5 flex flex-col ">
+            <img src={back} className=' h-full absolute z-10 ' alt="" />
+            <div className=" flex items-center z-20 mt-3 countainer ">
+                <p className=' text-[8px]  font-montserrat italic font-medium text-white ' >Services</p>
+                <div className=" w-[257px] h-0  border border-white ml-1 "></div>
+            </div>
+            <div className=" mt-3 font-montserrat font-extrabold text-[22.6394px]  leading-[24px] flex flex-col items-start justify-start  text-white countainer z-20 ">
+                <p>Libérez votre potentiel.</p>
+                <p>avec notre service</p>
+            </div>
+            <div className=" flex flex-col items-start z-20 mt-6 countainer ">
+                <div className=" flex flex-col items-start">
+                    <div className=" flex justify-center items-center  ">
+                        <img src={del} className=' w-[20.95px] h-[20.95px] mr-2 ' alt="" />
+                        <p className=' font-montserrat font-bold text-[16.7586px]  leading-[20px] text-white ' >Brand Strategy</p>
                     </div>
-                    <div className="xl:w-[500px] xl:h-[300px] w-[48%] h-[150px]    box flex flex-col items-start p-5 cursor-pointer " onClick={() => { handelclickonsavoirplu(2) }} >
-                        <img className=" xl:w-[87.67px] xl:h-[87.67px] w-[35px] h-[35px] opacity-75 mb-3 " src={design} alt="" />
-                        <p className='font-poppins xl:text-[35px] text-[9px] font-semibold mb-3 text-start ' >CREATION AND DESIGN</p>
-                        <p className='font-poppins xl:text-[12px] xl:mb-10 text-[6px] text-start mb-[0rem] ' >Capturing the Essence of the Deer Spirit</p>
-                        <p className='font-poppins xl:text-[12px] text-[5px] text-right opacity-25   ' >En savoir plus </p>
-                    </div>
+                    <p className='font-montserrat font-light text-[9px] italic leading-[11px] text-white' >Crafting the Heartbeat of Your Deer Brand</p>
                 </div>
-                <div className=" w-full flex h-fit  justify-between mt-7 ">
-                    <div className="xl:w-[500px] xl:h-[300px] w-[48%] h-[150px]    box flex flex-col items-start p-5 cursor-pointer " onClick={() => { handelclickonsavoirplu(3) }} >
-                        <img className=" xl:w-[87.67px] xl:h-[87.67px] w-[35px] h-[35px] opacity-75 mb-3 " src={mark} alt="" />
-                        <p className='font-poppins xl:text-[35px] text-[9px] font-semibold mb-3 text-start ' >WEB MARKETING</p>
-                        <p className='font-poppins xl:text-[12px] xl:mb-10 text-[6px] text-start mb-[0rem] ' >Amplifying the Deer's Call Across Digital Landscapes</p>
-                        <p className='font-poppins xl:text-[12px] text-[5px] text-right opacity-25 cursor-pointer '>En savoir plus </p>
+                <div className=" flex flex-col items-start mt-4">
+                    <div className=" flex justify-center items-center  ">
+                        <img src={mark} className=' w-[20.95px] h-[20.95px] mr-2 ' alt="" />
+                        <p className=' font-montserrat font-bold text-[16.7586px]  leading-[20px] text-white ' >Marketing</p>
                     </div>
-                    <div className="xl:w-[500px] xl:h-[300px] w-[48%] h-[150px]    box flex flex-col items-start p-5 cursor-pointer " onClick={() => { handelclickonsavoirplu(4) }} >
-                        <img className=" xl:w-[87.67px] xl:h-[87.67px] w-[35px] h-[35px] opacity-75 mb-3 " src={sett} alt="" />
-                        <p className='font-poppins xl:text-[35px] text-[9px] font-semibold mb-3 text-start ' >EVENT CREATORS</p>
-                        <p className='font-poppins xl:text-[12px] xl:mb-10 text-[6px] text-start mb-[0rem] ' >We craft brand-building events</p>
-                        <p className='font-poppins xl:text-[12px] text-[5px] text-right opacity-25 cursor-pointer ' >En savoir plus </p>
+                    <p className='font-montserrat font-light text-[9px] italic leading-[11px] text-white' >Amplifying the Deer's Call Across  Digital Landscapes</p>
+                </div>
+                <div className=" flex flex-col items-start mt-4">
+                    <div className=" flex justify-center items-center  ">
+                        <img src={sett} className=' w-[20.95px] h-[20.95px] mr-2 ' alt="" />
+                        <p className=' font-montserrat font-bold text-[16.7586px]  leading-[20px] text-white ' >Implementation</p>
                     </div>
+                    <p className='font-montserrat font-light text-[9px] italic leading-[11px] text-white' >Bringing the Deer's Vision to Life</p>
+                </div>
+                <div className=" flex flex-col items-start mt-4">
+                    <div className=" flex justify-center items-center  ">
+                        <img src={design} className=' w-[20.95px] h-[20.95px] mr-2 ' alt="" />
+                        <p className=' font-montserrat font-bold text-[16.7586px]  leading-[20px] text-white ' >Design</p>
+                    </div>
+                    <p className='font-montserrat font-light text-[9px] italic leading-[11px] text-white' >Capturing the Essence of the Deer Spirit</p>
                 </div>
             </div>
         </div>

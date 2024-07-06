@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import ServicesInfoo from './ServicesInfoo';
+import { useParams } from 'react-router-dom';
+import ServiceInffo from './ServiceInffo';
 
+function ServiceInfo() {
+  const { category } = useParams();
+  return (
+    <div className="App overflow-hidden bg-[#fcfcff]">
+      <ServiceInffo  category={category} />
+    </div>
+  );
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <ServicesInfoo></ServicesInfoo>
-  </React.StrictMode>
-);
-
+export default ServiceInfo;

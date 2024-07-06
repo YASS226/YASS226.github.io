@@ -16,6 +16,9 @@
 
   <title>AYL AGENCY</title>
   <style>
+    .service{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
     ::-webkit-scrollbar {
       display: none;
     }
@@ -282,8 +285,8 @@
   </style>
 </head>
 
-<body>
-  <div class="spinner" id="spinner">
+<body >
+  <div class="spinner"  id="spinner">
     <div class="spinner-icon"></div>
   </div>
 
@@ -307,8 +310,10 @@
       spinner.style.display = 'none';
       const cnt = document.getElementById('root');
       cnt.style.display = 'block';
-    }, 2000); // 2000 milliseconds = 2 seconds
+    }, 1000); // 2000 milliseconds = 2 seconds
   });
 </script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 
 </html>

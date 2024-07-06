@@ -32,9 +32,297 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
+.countainer {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
+@keyframes texteffect {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animatedchar span {
+  display: inline-block;
+  opacity: 0;
+  animation: texteffect 1s cubic-bezier(0.5, 0, 0.5, 1) both;
+  animation-delay: calc(30ms * var(--char-index));
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.sliding-text {
+  animation: slideIn 1s ease-out forwards;
+}
+
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.sliding-text-left {
+  white-space: nowrap;
+  display: inline-block;
+  animation: slideLeft 10s linear infinite;
+}
+
+.hover-fade {
+  transition: background-color 0.5s ease;
+}
+
+.hover-fade:hover {
+  background-color: #d1fb00;
+  /* Equivalent to tailwind's bg-slate-400 */
+}
+
+@keyframes slideInlg {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutlg {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.slide-inlg {
+  animation: slideInlg 1s forwards;
+}
+
+.slide-outlg {
+  animation: slideOutlg 1s forwards;
+}
+
+.logo-container {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #000;
+}
+
+.ansr {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.slide-down {
+  max-height: 1000px;
+  /* Vous pouvez ajuster cette valeur en fonction de votre contenu */
+  opacity: 1;
+}
+
+.slide-up {
+  max-height: 0;
+  opacity: 0;
+}
+
+.form {
+
+  --border-height: 1px;
+  --border-before-color: rgba(221, 221, 221, 0.39);
+  --border-after-color: #5891ff;
+  --input-hovered-color: #4985e01f;
+  position: relative;
+  /* width: var(--width-of-input); */
+}
+
+/* styling of Input */
+.input {
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: 0.54px;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+}
+
+/* styling of animated border */
+.input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+/* Hover on Input */
+input:hover {
+  background: var(--input-hovered-color);
+}
+
+input:focus {
+  outline: none;
+}
+
+/* here is code of animated border */
+input:focus~.input-border {
+  width: 100%;
+}
+
+textarea:hover {
+  background: var(--input-hovered-color);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/* here is code of animated border */
+textarea:focus~.input-border {
+  width: 100%;
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition-duration: .5s;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5px;
+}
+
+.bars {
+  width: 100%;
+  height: 5px;
+  /* background-color: #A51D21; */
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,
+#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked+.toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #333;
+  background: none;
+}
+
+.arrow:hover {
+  color: #000;
+}
+
+.navBG {
+  background: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
