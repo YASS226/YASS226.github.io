@@ -95,10 +95,10 @@ const Footer = () => {
             <div className="w-full h-[240px] xl:h-[200px] flex items-center justify-center flex-col text-white px-6 bg-black bg-opacity-100 border-t-2 mt-4 m-auto ml-0 z-20">
                 <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                     <div className="text-center md:text-left mb-4 md:mb-0">
-                        <h2 className="font-montserrat font-bold text-[20px]">Ayl Agency</h2>
+                        <h2 className="font-montserrat font-bold text-[20px] mb-1">Ayl Agency</h2>
                         <p className="opacity-30">© 2024 Ayl Agency. All rights reserved.</p>
                     </div>
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-4 text-[8px] sm:text-[15px] mb-4">
                         <a href="/#Info" className="opacity-30 hover:opacity-100 transition duration-600 ease-in-out">
                             À propos de nous
                         </a>
@@ -116,7 +116,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <p className="text-center">Follow us on</p>
+                <p className="text-center mb-4 ">Follow us on</p>
                 <div className="countainer z-20 flex w-[150px] justify-between absolute bottom-10">
                     <a rel="noopener noreferrer" href='https://www.facebook.com/profile.php?id=100088203763826&mibextid=ZbWKwL&_rdc=2&_rdr' target='_blank' className=' font-montserrat font-extrabold text-[10px] leading-[12px] text-white ' >Facebook</a>
                     <a rel="noopener noreferrer" href='https://www.instagram.com/agencyayl/' target='_blank' className=' font-montserrat font-extrabold text-[10px] leading-[12px] text-white ' >Instagram</a>
