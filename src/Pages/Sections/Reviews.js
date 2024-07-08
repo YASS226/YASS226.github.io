@@ -14,7 +14,7 @@ import logof3 from '../../src/Logo F3.png';
 import vax from '../../src/vaxigrip logo.png';
 import Tang from '../../src/Tangier-Film-Festival-Logos.png';
 import achghal from '../../src/achghal logo.jpg';
-import sega from '../../src/segafredo.png';
+import sega from '../../src/ESPRESSO LOGO.png';
 
 
 const logos = [Cimat, Kenzi, parq, indrive, lessieur, Tcl, mec, logof3, vax, Tang, achghal, sega];
