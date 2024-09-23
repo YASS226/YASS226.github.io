@@ -25,6 +25,7 @@ import { Link } from "react-router-dom";
 // import React, { useEffect, useRef } from 'react';
 import React from 'react';
 
+
 import logoayl from '../../src/ayl2.png';
 
 
@@ -60,10 +61,17 @@ const Info = () => {
                     <p className=' font-montserrat font-extrabold text-[12px] xl:text-[16px] leading-[18px] text-black xl:w-[70%] '>Explorez le potentiel infini du marketing digital avec <b className='text-[#A51D21]' >Ayl Agency</b> Notre expertise, notre créativité et notre engagement envers l'excellence vous garantissent des résultats exceptionnels. Découvrez comment nous pouvons faire briller votre marque et vous démarquer dans un monde numérique en constante évolution.</p>
                     <img src={logoayl} className=' xl:w-[100px] xl:flex xl:visible hidden ' alt="" />
                 </div>
-                <div className=" w-[185px] h-[27.78px] sm:w-[200px] sm:h-[30px] rounded-[10.7397px] bg-[#A51D21] flex justify-center items-center mt-3">
-                    <div className="flex items-center justify-between ">
-                        <a href="/#Contact"><p className='font-montserrat font-italic  font-semibold text-[7.50471px] sm:text-[9px] text-[#fff] text-start ml-2' >Réclamez votre consultation gratuite</p></a>
-                        <img src={down} className=' w-[15px] h-[15px] ' alt="" />
+                <div className=" flex flex-row ">
+                    <div className=" w-[185px] h-[27.78px] sm:w-[200px] sm:h-[30px] rounded-[10.7397px] bg-[#A51D21] flex justify-center items-center mt-3 mr-3">
+                        <div className="flex items-center justify-between ">
+                            <a href="#Contact"><p className='font-montserrat font-italic  font-semibold text-[7.50471px] sm:text-[9px] text-[#fff] text-start ml-2' >Réclamez votre consultation gratuite</p></a>
+                            <img src={down} className=' w-[15px] h-[15px] ' alt="" />
+                        </div>
+                    </div>
+                    <div className=" w-[185px] h-[27.78px] sm:w-[200px] sm:h-[30px] rounded-[10.7397px] bg-[#fff] border text-[#A51D21] border-[#A51D21] hover:bg-[#A51D21] hover:text-[#fff] transition duration-600 ease-in-out  flex justify-center items-center mt-3">
+                        <div className="flex items-center justify-between ">
+                            <a href="/Pdf/AYLcat.pdf" download="AylCat.pdf"><p className='font-montserrat font-italic  font-semibold text-[7.50471px] sm:text-[9px]  text-start ml-2' >Accédez au catalogue Ayl</p></a>
+                        </div>
                     </div>
                 </div>
             </div>
