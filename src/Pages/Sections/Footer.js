@@ -122,6 +122,10 @@ const Footer = () => {
                     <a rel="noopener noreferrer" href='https://www.instagram.com/agencyayl/' target='_blank' className=' font-montserrat font-extrabold text-[10px] leading-[12px] text-white ' >Instagram</a>
                     <a rel="noopener noreferrer" href='https://www.linkedin.com/company/ayl-agency/' target='_blank' className=' font-montserrat font-extrabold text-[10px] leading-[12px] text-white ' >linkdin</a>
                 </div>
+                <div className="countainer z-20 flex w-[150px] justify-center absolute bottom-5 ">
+                    <p className='font-montserrat font-extrabold text-[10px] leading-[12px] text-white mr-4' >Contact@aylagency.com</p>
+                    <p className='font-montserrat font-extrabold text-[10px] leading-[12px] text-white' >+212619861440</p>
+                </div>
             </div>
         </div>
     );
