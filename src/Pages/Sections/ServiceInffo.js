@@ -142,20 +142,9 @@ const servicesInfo = [
 
 const ServiceInffo = ({ category }) => {
 
-    const scrollToTopSlowly = () => {
-        const scrollStep = -window.scrollY / (10 / 15); // Adjust the duration by changing 500 (milliseconds)
-        const scrollInterval = setInterval(() => {
-          if (window.scrollY !== 0) {
-            window.scrollBy(0, scrollStep);
-          } else {
-            clearInterval(scrollInterval);
-          }
-        }, 15); // Controls the smoothness, lower means smoother
-      };
-      
-      useEffect(() => {
-        scrollToTopSlowly();
-      }, [category]);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [category]);
 
     const filteredCategory = servicesInfo.find(cat => cat.category === category);
 
