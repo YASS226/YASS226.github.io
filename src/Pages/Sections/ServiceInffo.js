@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import Nav from "./Nav";
-import back from '../../src/dark-black-pattern-bgs.jpg'
+// import back from '../../src/dark-black-pattern-bgs.jpg'
 import strategie from '../../src/strategy.png'
 import dev from '../../src/coding.png'
 import mesg from '../../src/promotion.png'
@@ -140,11 +140,11 @@ const servicesInfo = [
     // Add more categories as needed
 ];
 
-const ServiceInffo = ( { category } ) => {
+const ServiceInffo = ({ category }) => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [ category]);
+    }, [category]);
 
     const filteredCategory = servicesInfo.find(cat => cat.category === category);
 
@@ -155,47 +155,40 @@ const ServiceInffo = ( { category } ) => {
     return (
         <div className="">
             <Nav></Nav>
-            <div className=" w-full items-center absolute top-0 z-20  ">
-                <div className=" mb-5 w-full flex items-center justify-center flex-col mt-[70px] relative" key={filteredCategory.category}>
-                    <div className=" z-20 w-full flex flex-col justify-center items-center  text-white bg-no-repeat bg-black xl:bg-cover  " style={{
-                        backgroundImage: `url(${back})`,
+            <div className=" w-full   items-center absolute top-0 z-20  ">
+                <div className=" mb-5 h-fit   pb-3 w-full flex items-center justify-center flex-col mt-[70px] relative" key={filteredCategory.category}>
+                    <div className=" z-20 w-full flex flex-col justify-center items-center bg-white  text-white bg-repeat  xl:bg-cover  " style={{
+                        // backgroundImage: `url(${back})`,
                         backgroundAttachment: 'fixed',
-                        height: "80vh",
+
+
                         backgroundPosition: "center top "
                     }} >
                         {/* <div className=" bg-[#000] absolute w-full h-[80vh] top-0 opacity-40 z-10 "></div> */}
-                        <h1 className=" z-20 text-center font-montserrat font-extrabold text-[31.1644px] leading-[38px] m-auto mb-2 ">
+                        <h1 className=" z-20 text-center text-black font-montserrat font-extrabold text-[31.1644px] leading-[38px] mt-2 m-auto mb-2 ">
                             {filteredCategory.category}
                         </h1>
 
-                        <p className="z-20 text-center font-montserrat font-medium w-[80%] mt-0 text-[15px]   m-auto " >{filteredCategory.description}</p>
+                        {/* <p className="z-20 text-center font-montserrat font-medium w-[80%] mt-0 text-[15px]   m-auto " >{filteredCategory.description}</p> */}
+                        <div className=" w-[95%]  md:h-[20rem] mb-2  grid grid-cols-2 m-auto mt-5 md:flex md:justify-between  text-black ">
+                            {filteredCategory.services.map(service => (
+                                <div key={service.title} className=" bg-[#F08080] text-white mb-3 md:w-[35%] h-[13rem] md:h-[100%] rounded  mr-2  glassback relative text-start ">
+                                    <div className=" absolute top-0 h-[80%] w-full ">
+                                       
+                                        <h1 className="font-montserrat font-bold text-[10px] md:text-lg mt-[3rem] md:mt-[4.25rem] ml-2" >{service.title}</h1>
+                                        <p className="mt-5 ml-2 font-montserrat font-medium text-[8px] md:text-[15px]" > {service.description}</p>
+                                    </div>
 
-                    </div>
-
-
-                    <div className="mt-5  items-start justify-start">
-                        <div className=" mt-3 font-montserrat font-extrabold text-[19.92px] tracking-[-0.02em] leading-[28px] flex flex-col items-start justify-start  text-[#A51D21] ">
-                            <p>NOS SERVICES</p>
-                            <div className=" flex z-20 m-auto justify-center">
-                                <div className=" w-[95px] h-0  border border-[#A51D21] ml-1 "></div>
-                            </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
-
-                    <ul className="list-disc ml-8 mt-5">
-                        {filteredCategory.services.map(service => (
-                            <li key={service.title}>
-                                <h2 className="font-montserrat font-bold text-lg mt-2">
-                                    {service.title}
-                                </h2>
-                                <p className="mt-1 font-montserrat font-medium text-[10px]">
-                                    {service.description}
-                                </p>
-                            </li>
-                        ))}
-                    </ul>
                 </div>
-
+                <a href="#Contact">
+                    <div className=" h-[70px] rounded bg-[#A51D21] text-center justify-center w-[80%] md:w-[40%] m-auto mt-0 flex  cursor-pointer text-white hover:bg-[#F08080] hover:text-[#FFF] transition duration-600 ease-in-out ">
+                        <p className="font-montserrat font-medium text-[15px] m-auto" >Travaillons ensemble</p>
+                    </div>
+                </a>
                 <div className="mt-[5.25rem] mb-[5.25rem] flex flex-col justify-center items-center">
                     <div className=" mt-3 font-montserrat font-extrabold text-[19.92px] tracking-[-0.02em] leading-[28px] flex flex-col items-start justify-start  text-[#A51D21] ">
                         <p>AUTRES SERVICES</p>

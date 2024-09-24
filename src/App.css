@@ -326,3 +326,9 @@ textarea:focus~.input-border {
   border: 2px solid rgba(255, 255, 255, 0);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+.glassback {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(66, 68, 90, 0.28);
+-moz-box-shadow: 0px 0px 5px 1px rgba(66, 68, 90, 0.28);
+box-shadow: 0px 0px 5px 1px rgba(66, 68, 90, 0.28);
+}
