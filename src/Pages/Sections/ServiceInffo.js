@@ -170,22 +170,34 @@ const ServiceInffo = ({ category }) => {
                         </h1>
 
                         {/* <p className="z-20 text-center font-montserrat font-medium w-[80%] mt-0 text-[15px]   m-auto " >{filteredCategory.description}</p> */}
-                        <div className=" w-[95%]  md:h-[20rem] mb-2  grid grid-cols-2 m-auto mt-5 md:flex md:justify-between  text-black ">
+                        <div className=" md:w-[95%] w-[95%]  md:h-[20rem] mb-2  grid grid-cols-2 m-auto mt-5 md:flex md:justify-between  text-black ">
                             {filteredCategory.services.map(service => (
-                                <div key={service.title} className=" bg-[#F08080] text-white mb-3 md:w-[35%] h-[13rem] md:h-[100%] rounded  mr-2  glassback relative text-start ">
+                                <div key={service.title} className=" bg-[#FFF] text-black mb-3 md:w-[35%] h-[13rem] md:h-[100%] rounded  mr-2  glassback relative text-start ">
                                     <div className=" absolute top-0 h-[80%] w-full ">
                                        
-                                        <h1 className="font-montserrat font-bold text-[10px] md:text-lg mt-[3rem] md:mt-[4.25rem] ml-2" >{service.title}</h1>
-                                        <p className="mt-5 ml-2 font-montserrat font-medium text-[8px] md:text-[15px]" > {service.description}</p>
+                                        <h1 className="font-montserrat font-bold text-[10px] md:text-[15px] mt-[3rem] md:mt-[2.25rem] ml-2 text-center" >{service.title}</h1>
+                                        <p className="mt-5 ml-2 font-montserrat font-medium text-[8px] md:text-[10px]" > {service.description}</p>
                                     </div>
 
                                 </div>
                             ))}
                         </div>
+                        {/* <div className=" md:w-[95%] w-[95%]  md:h-[20rem] mb-2  grid grid-cols-2 m-auto mt-5 md:flex md:justify-between  text-black ">
+                            {filteredCategory.services.map(service => (
+                                <div key={service.title} className=" bg-[#FFF] text-black mb-3 md:w-[35%] h-[13rem] md:h-[100%] rounded  mr-2  glassback relative text-start ">
+                                    <div className=" absolute top-0 h-[80%] w-full ">
+                                       
+                                        <h1 className="font-montserrat font-bold text-[10px] md:text-[15px] mt-[3rem] md:mt-[2.25rem] ml-2" >{service.title}</h1>
+                                        <p className="mt-5 ml-2 font-montserrat font-medium text-[8px] md:text-[10px]" > {service.description}</p>
+                                    </div>
+
+                                </div>
+                            ))}
+                        </div> */}
                     </div>
                 </div>
                 <a href="#Contact">
-                    <div className=" h-[70px] rounded bg-[#A51D21] text-center justify-center w-[80%] md:w-[40%] m-auto mt-0 flex  cursor-pointer text-white hover:bg-[#F08080] hover:text-[#FFF] transition duration-600 ease-in-out ">
+                    <div className=" h-[70px] rounded hover:bg-[#FFF] hover:text-[#A51D21] hover:border-[#A51D21] hover:border bg-[#A51D21] text-white transition duration-600 ease-in-outtext-center justify-center w-[80%] md:w-[40%] m-auto mt-0 flex  cursor-pointer  ">
                         <p className="font-montserrat font-medium text-[15px] m-auto" >Travaillons ensemble</p>
                     </div>
                 </a>
